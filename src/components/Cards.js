@@ -15,8 +15,8 @@ const Cards = () => {
 
         <div className="rounded-xl relative">
             <div className="absolute w-full h-full bg-black/40 text-white text-center">
-                <p className="font-bold text-2xl px-2 pt-14">Find a Sushi Store near you</p>
-                <button className="border hover:bg-white hover:text-black duration-300 text-white bg-black mx-2 bottom-4 rounded px-4 py-2"><Link href="/Store">Find Store</Link></button>
+                <p className="font-bold text-2xl px-2 pt-14">Write a Review</p>
+                <button className="border hover:bg-white hover:text-black duration-300 text-white bg-black mx-2 bottom-4 rounded px-4 py-2"><Link href="/Store">Write Review</Link></button>
             </div>
             <img className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded" src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="/"></img>
         </div>

@@ -14,7 +14,7 @@ const Specials = () => {
         
         <div className="w-full h-[90%] text-center flex flex-col items-center justify-center px-4 text-white">
             <h1 className="font-bold text-2xl underline">Sushi Muchi Specials</h1>
-            <h1 className="text-[25px] mt-12 text-white">Request for delivery of Sushi or all the other Japanese Foods</h1>
+            <h1 className="text-[25px] mt-12 text-white">Request for the special deals and kitchen combos</h1>
             <p className="text-[20px] my-5 font-bold">Request a Sushi chef to come over your house and perform</p>
             <p className="mb-5 font-bold">You can order sushi request delivery etc.</p>
         </div>
