@@ -10,6 +10,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useAuth();
+  const [errorMessage, setErrorMessage] = useState("");
   const router = useRouter(); // Initialize useRouter hook
   // Check if user is already logged in
   useEffect(() => {
@@ -37,6 +38,7 @@ const Login = () => {
         console.log("Token:", data.token);
       } else {
         // Authentication failed
+        setErrorMessage(data.error || "Authentication failed.");
         console.log("Error:", data.error);
       }
     } catch (error) {
@@ -64,6 +66,7 @@ const Login = () => {
               <label className="relative mb-2 text-white">Password:</label>
               <input className="border relative bg-gray-100 p-2" type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
             </div>
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
             <button className="w-full py-3 mt-8 hover:bg-black duration-300 border relative text-white hover:text-white cursor-pointer">Sign in</button>
             <p className="relative text-white"><input className="mr-2 relative" type="checkbox"></input>Remember this account</p>
             <p className="relative text-white"><span className="text-blue-500 relative cursor-pointer"><Link href="/Signup">Sign up</Link></span> to become a member</p>
