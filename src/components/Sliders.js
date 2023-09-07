@@ -39,7 +39,7 @@ const Sliders = () => {
     <div className="bg-black">
 
         <div className="h-[900px] w-full m-auto relative group">
-            <div style={{backgroundImage: `url(${slides[current].url})`}} className="w-full h-full bg-cover bg-center duration-300"></div>
+            <div style={{backgroundImage: `url(${slides[current].url})`}} className="w-full h-full bg-contain bg-no-repeat bg-center duration-300"></div>
 
             <div onClick={prevSlide} className="cursor-pointer absolute transition-x-0 transition-y-[50%] top-[50%] text-white left-10">
                 <BsArrowLeftCircle size={30} />

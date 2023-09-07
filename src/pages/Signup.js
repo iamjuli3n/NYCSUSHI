@@ -51,9 +51,10 @@ const Signup = () => {
 
   return (
     <div>
-      <NavBar />
-      <div className="w-full h-screen top-[90px] bg-zinc-900/70">
+        <NavBar />
+        <div className="w-full h-full top-[90px] bg-zinc-900/70">
         <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" className="w-full h-full object-cover absolute -z-10"></img>
+        
         <div className="flex justify-center items-center h-full">
             <form onSubmit={handleSignup} className="max-w-[400px] w-full mx-auto border p-8">
               <BiArrowBack onClick={goBack} className="text-white relative cursor-pointer text-[20px]" />
@@ -82,7 +83,6 @@ const Signup = () => {
                 Sign Up
               </button>
             </form>
-        </div>
       </div>
       <Footer />
     </div>
