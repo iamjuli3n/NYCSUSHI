@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="w-full h-full top-[100%] bg-zinc-900/70">
         <img src="https://rb.gy/0kwgu" className="w-full h-full pb-[2px] object-cover absolute -z-10"></img>
         
-        <div className="w-full h-[100%] text-center flex flex-col items-center justify-center px-6 text-white">
+        <div className="w-full h-[100%] text-center flex flex-col items-center justify-center py-40 text-white">
             
             <h1 className="text-[25px] mt-6 text-white">Interested In Our Story? </h1>
             <p className="text-[16px] my-3 sm:my-5 font-bold">Embark on a Journey of Sushi Enchantment at New York City Sushi: Where Urban Dynamism Meets Culinary Artistry!</p>
