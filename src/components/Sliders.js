@@ -9,13 +9,13 @@ const Sliders = () => {
 
     const slides = [
         {
-            url: "https://cdn.discordapp.com/attachments/1013244437243117640/1142649045618278420/half_fresh-min.png"
+            url: "https://cdn.discordapp.com/attachments/1150271355959398502/1150499262531117136/products.png"
         },
         {
-            url: "https://cdn.discordapp.com/attachments/1013244437243117640/1142649044846522429/promo-code-1-min.png"
+            url: "https://cdn.discordapp.com/attachments/1150271355959398502/1150499262904414228/best-sushi.png"
         },
         {
-            url: "https://cdn.discordapp.com/attachments/1013244437243117640/1142649046134165525/nycad_sushi_work-min.png"
+            url: "https://cdn.discordapp.com/attachments/1150271355959398502/1150499263390949477/coupon-code.png"
         }
     ]
 
@@ -38,7 +38,7 @@ const Sliders = () => {
   return (
     <div className="bg-black">
 
-        <div className="h-[900px] w-full m-auto relative group">
+        <div className="h-[600px] py-10 w-full m-auto relative group">
             <div style={{backgroundImage: `url(${slides[current].url})`}} className="w-full h-full bg-contain bg-no-repeat bg-center duration-300"></div>
 
             <div onClick={prevSlide} className="cursor-pointer absolute transition-x-0 transition-y-[50%] top-[50%] text-white left-10">
